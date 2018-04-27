@@ -1,0 +1,290 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+fieldset {
+width: 95%;
+margin: auto;
+border: none;
+}
+/*========== checkbox and radio style =======*/
+input[type="checkbox"],
+input[type="radio"] {
+  display: none;
+}
+input[type="checkbox"] + label:before {
+  background-color: #AFEEEE;
+  border: 1px solid #008080;
+  border-radius: 3px;
+  content: "";
+  display: inline-block;
+  font-size: 14px;
+  height: 14px;
+  width: 14px;
+  line-height: 14px;
+  margin: -2px 8px 0 0;
+  vertical-align: middle;
+  color: #605e5e;
+}
+input[type="checkbox"]:checked + label:before {
+  content: "\2714";
+  text-align: center;
+}
+input[type="radio"] + label:before {
+  background-color: #AFEEEE;
+  border: 1px solid #008080;
+  border-radius: 7px;
+  content: "";
+  display: inline-block;
+  font-size: 28px;
+  height: 14px;
+  width: 14px;
+  line-height: 8px;
+  margin: -2px 6px 0 0;
+  vertical-align: middle;
+  color: #605e5e;
+}
+input[type="radio"]:checked + label:before {
+  content: "\2022";
+  text-align: center;
+}
+
+/*=========== footer =============*/
+footer {
+  text-align: center;
+  height: 200px;
+  margin: 30px auto;
+}
+
+/*========= mobile form min-width:320px ============ */
+@media (min-width: 320px) {
+  body {
+    width: 100%;
+    font-family: 'Alegreya', serif;
+  }
+  /*======= 320px: header =======*/
+  header {
+    width: 100%;
+    padding: 1.5rem 0;
+    background: radial-gradient(#082628, #118498);
+    color: white;
+    text-align: center;
+    text-shadow: 1px 2px #5F9EA0;
+  }
+  h1 {
+    margin: 0;
+  }
+  form {
+    width: 100%;
+    margin: 0 auto;
+    line-height: 180%;
+  }
+  /*======= 320px: contact info =======*/
+  h2 {
+    font-size: 1.6rem;
+    padding-bottom: 1rem;
+  }
+  section {
+    text-align: center;
+    width: 100%;
+    padding: 20px 5px 30px;
+  }
+  section h2, section p {
+    padding: 10px 0;
+  }
+  hr {
+    width: 93%;
+    margin: auto;
+  }
+  #line1 {
+    border-top: solid 4px #605e5e;
+    padding-bottom: 3px;
+  }
+  .line2 {
+    border-bottom: solid 1px #605e5e;
+    margin-bottom: 5%;
+  }
+  input, select, textarea {
+    border: none;
+    border-radius: 5px;
+    background-color: #e8e8e8;
+  }
+  input:focus, select:focus, textarea:focus {
+    background-color: #AFEEEE;
+    outline: 2px solid #008080;
+  }
+  #fullname, #email, #phonenumber, #street-address, #city, #state {
+    width: 100%;
+    height: 35px;
+  }
+  #zipcode {
+    display: block;
+    width: 50%;
+    height: 35px;
+  }
+
+  /*========== 320px: newsletter ===========*/
+  .newsletter {
+    padding-top: 0.6rem;
+    line-height: 220%
+  }
+
+  /* ========= 320px: text in placeholder ===========*/
+  input::placeholder {
+    padding-right: 5%;
+    text-align: right;
+  }
+  textarea {
+    width: 100%;
+    margin: 10px auto 0;
+    padding: 3px;
+  }
+  button {
+    width: 100%;
+    margin: 8% auto 3%;
+    padding: 15px;
+    background-color: #20B2AA;
+    color: white;
+    font-size: 1.5rem;
+    text-shadow: 1px 1px #00008B;
+    border-radius: 8px;
+  }
+}
+
+/*========= desktop form min-width:768px ============ */
+
+@media (min-width: 768px) {
+  body {
+    width: 100%;
+    font-family: 'Alegreya', serif;
+  }
+
+  /*======= 768px: header =======*/
+  header {
+    width: 100%;
+    padding: 1.5rem 0;
+    background: radial-gradient(#082628, #118498);
+    color: white;
+    text-align: center;
+    text-shadow: 1px 2px #5F9EA0;
+  }
+  h1 {
+    margin: 0;
+    transition: all .5s .2s;
+  }
+  h1:hover {
+    transform: scale(1.1);
+    cursor: default;
+  }
+
+  /*======= 768px: contact info =======*/
+  hr {
+    width: 93%;
+    margin: auto;
+  }
+  .wider-view {
+    margin: 0 auto;
+    width: 60%;
+  }
+  .contact-info {
+    padding-bottom: 2rem;
+  }
+  #line1 {
+    border-top: solid 4px #605e5e;
+    padding-bottom: 3px;
+  }
+  .line2 {
+    border-bottom: solid 1px #605e5e;
+    margin-bottom: 5%;
+  }
+  h2 {
+    font-size: 1.6rem;
+    padding-bottom: 1rem;
+  }
+  section {
+    text-align: center;
+    width: 100%;
+    padding: 2rem 0.5rem 2.2rem;
+  }
+  section h2, section p {
+    padding: 0.5rem 0;
+  }
+  .same-line {
+    display: grid;
+    grid-template-columns: 110px 1fr;
+    align-items: center;
+  }
+  input, select, textarea {
+    margin: 10px auto;
+    border: none;
+    border-radius: 5px;
+    background-color: #e8e8e8;
+  }
+  input:focus, select:focus, textarea:focus {
+    background-color: #AFEEEE;
+    outline: 1px solid #008080;
+    transition: all .5s ease-in-out;
+    transform: scaleY(1.2);
+  }
+  fieldset {
+    margin: auto;
+    border: none;
+  }
+  #fullname, #email, #phonenumber, #street-address, #city, #state {
+    width: 100%;
+    height: 35px;
+  }
+  #zipcode {
+    margin: 10px auto 10px 0;
+    width: 40%;
+    height: 35px;
+  }
+
+  /* ============= 768px: text in placeholder ===============*/
+  input::placeholder {
+    padding-right: 1rem;
+    text-align: right;
+  }
+  textarea {
+    width: 100%;
+    margin: 10px auto 0;
+    padding: 5px;
+  }
+
+  /*======= 768px: newsletter ========*/
+  .newsletter {
+    margin: 0 auto;
+    padding: 0.6rem 0 0.3rem;
+    width: 93%;
+  }
+  .nl-desktop {
+    line-height: 170%;
+    padding-bottom: 0.6rem;
+  }
+  button {
+    width: 100%;
+    margin: 20px auto 8px;
+    padding: 15px 0;
+    background: radial-gradient(#118498, #20B2AA);
+    text-shadow: 1px 1px gray;
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+  }
+  button:hover {
+    background: radial-gradient(#280811, #8B0000);
+    cursor: pointer;
+    transform: scale(1.05);
+  }
+
+  /*========== 768px footer ===========*/
+  footer p {
+    transition: .5s ease-in-out;
+  }
+  footer p:hover {
+    transform: skewX(30deg);
+  }
+}
