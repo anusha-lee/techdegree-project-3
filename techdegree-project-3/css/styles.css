@@ -58,90 +58,89 @@ footer {
   margin: 30px auto;
 }
 
-/*========= mobile form min-width:320px ============ */
-@media (min-width: 320px) {
-  body {
+/*========= form ============ */
+
+body {
     width: 100%;
     font-family: 'Alegreya', serif;
-  }
-  /*======= 320px: header =======*/
-  header {
+    }
+    /*======= header =======*/
+header {
     width: 100%;
-    padding: 1.5rem 0;
+    padding: 1.3rem 0;
     background: radial-gradient(#082628, #118498);
     color: white;
     text-align: center;
-    text-shadow: 1px 2px #5F9EA0;
-  }
-  h1 {
+    }
+h1 {
     margin: 0;
-  }
-  form {
+    }
+form {
     width: 100%;
     margin: 0 auto;
     line-height: 180%;
-  }
-  /*======= 320px: contact info =======*/
-  h2 {
-    font-size: 1.6rem;
-    padding-bottom: 1rem;
-  }
-  section {
+    }
+    /*======= contact info =======*/
+h2 {
+    font-size: 1.5rem;
+    padding-bottom: 0.8rem;
+    }
+section {
     text-align: center;
     width: 100%;
     padding: 20px 5px 30px;
-  }
-  section h2, section p {
-    padding: 10px 0;
-  }
-  hr {
+    }
+section h2, section p {
+    padding: 0.4rem 0;
+    }
+hr {
     width: 93%;
     margin: auto;
-  }
-  #line1 {
+    }
+#line1 {
     border-top: solid 4px #605e5e;
     padding-bottom: 3px;
-  }
-  .line2 {
+    }
+.line2 {
     border-bottom: solid 1px #605e5e;
     margin-bottom: 5%;
-  }
-  input, select, textarea {
+    }
+input, select, textarea {
     border: none;
     border-radius: 5px;
     background-color: #e8e8e8;
-  }
-  input:focus, select:focus, textarea:focus {
+    }
+input:focus, select:focus, textarea:focus {
     background-color: #AFEEEE;
     outline: 2px solid #008080;
-  }
-  #fullname, #email, #phonenumber, #street-address, #city, #state {
+    }
+#fullname, #email, #phonenumber, #street-address, #city, #state {
     width: 100%;
     height: 35px;
-  }
-  #zipcode {
+    }
+#zipcode {
     display: block;
     width: 50%;
     height: 35px;
-  }
+    }
 
-  /*========== 320px: newsletter ===========*/
-  .newsletter {
+    /*========== newsletter ===========*/
+.newsletter {
     padding-top: 0.6rem;
     line-height: 220%
-  }
+    }
 
-  /* ========= 320px: text in placeholder ===========*/
-  input::placeholder {
+    /* ========= text in placeholder ===========*/
+input::placeholder {
     padding-right: 5%;
     text-align: right;
-  }
-  textarea {
+    }
+textarea {
     width: 100%;
     margin: 10px auto 0;
     padding: 3px;
-  }
-  button {
+    }
+button {
     width: 100%;
     margin: 8% auto 3%;
     padding: 15px;
@@ -150,8 +149,7 @@ footer {
     font-size: 1.5rem;
     text-shadow: 1px 1px #00008B;
     border-radius: 8px;
-  }
-}
+    }
 
 /*========= desktop form min-width:768px ============ */
 
